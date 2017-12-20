@@ -9,6 +9,6 @@ public class ClientProgram {
     public static void main(String[] args) {
         Booking b = new LifeTimememberGroupBooking();
         Notification n = NotificationBuilder.getNotification(b);
-        n.notify(b);
+        n.notifyMessage(b);
     }
 }

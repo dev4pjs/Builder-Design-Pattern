@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Notification {
+
+
     private List<PersonalNotification> listOfPersonalNotifications = new ArrayList<PersonalNotification>();
 
     public List<PersonalNotification> getListOfPersonalNotifications() {
@@ -16,7 +18,7 @@ public class Notification {
         this.listOfPersonalNotifications = listOfPersonalNotifications;
     }
 
-    public void notify(Booking booking){
+    public void notifyMessage(Booking booking){
         for(PersonalNotification p : listOfPersonalNotifications){
             p.sendNotification(booking);
         }
